@@ -1,3 +1,54 @@
-<html>
-callaloquito index
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad de Calla Loquito APPs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        p {
+            font-size: 16px;
+        }
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        // Función para encriptar la dirección de correo electrónico
+        function encriptarCorreo() {
+            var correo = "callaloquitoapps" + "@" + "gmail.com";
+            var encriptado = "";
+            for (var i = 0; i < correo.length; i++) {
+                encriptado += "&#" + correo.charCodeAt(i) + ";";
+            }
+            document.getElementById("correo-encriptado").innerHTML = encriptado;
+        }
+    </script>
+</head>
+<body>
+    <h1>Política de Privacidad de Calla Loquito APPs</h1>
+    <p>Fecha de entrada en vigor: agosto 2024</p>
+    <p>Esta Política de Privacidad describe cómo se recopila, utiliza y comparte la información personal de los usuarios de la aplicación “Calla Loquito APPs”. Al utilizar nuestra aplicación, aceptas los términos de esta política.</p>
+    <h2>Información recopilada:</h2>
+    <ul>
+        <li>Datos personales: Recopilamos información como tu nombre, dirección de correo electrónico y número de teléfono cuando te registras en la aplicación.</li>
+        <li>Datos de uso: Recopilamos datos sobre cómo utilizas la aplicación, como las funciones que utilizas y el tiempo que pasas en la aplicación.</li>
+    </ul>
+    <!-- ... (continúa con el resto del contenido) ... -->
+    <h2>Contacto:</h2>
+    <p>Haz clic para ver el correo de contacto: <span id="correo-encriptado"></span></p>
+    <button onclick="encriptarCorreo()">Mostrar correo de contacto</button>
+</body>
 </html>
